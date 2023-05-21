@@ -17,7 +17,7 @@ orbd -ORBInitialPort 1050&
 sleep 2
 
 # Start the server
-gnome-terminal --tab --title="Server" --command="bash -c 'java Server -ORBInitialPort 1050 -ORBInitialHost localhost& exec bash'"
+gnome-terminal --tab --title="Server" --command="bash -c 'java Server -ORBInitialPort 1050 -ORBInitialHost localhost; exec bash'"
 
 sleep 2
 
