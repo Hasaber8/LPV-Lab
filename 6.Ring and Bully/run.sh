@@ -5,16 +5,7 @@ javac *.java
 
 if [ "$1" = "-1" ]; then
     # Run java Ring
-    java Ring
+    java Bully
 else
-    echo "Invalid argument. Please provide -1 to run java Ring."
-fi
-
-
-if [ "$1" = "-2" ]; then
-    # Run java Ring
     java Ring
-else
-    echo "Invalid argument. Please provide -1 to run java Ring."
 fi
-

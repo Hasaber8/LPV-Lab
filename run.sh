@@ -25,7 +25,12 @@ elif [ "$1" = "-5" ]; then
 elif [ "$1" = "-6" ]; then
     rm -rf 1.Client-Server-RMI 2.CORBA 3.MPI '4.Clock synchronization' 5.Token-ring
     cd 6.Ring\ and\ Bully/ || exit 1
-    ./run.sh
+    if [ "$2" = "-1" ]; then
+        # Run run.sh script with -1 argument
+        ./run.sh -1
+    else
+        ./run.sh -2
+    fi
 else
     echo "Invalid argument."
 fi
