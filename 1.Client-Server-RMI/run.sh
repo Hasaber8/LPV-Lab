@@ -3,8 +3,11 @@
 # Compile Java files
 javac *.java
 
+# if existing service kill it
+pkill rmiregistry
+
 # Generate stubs and skeletons using RMI Compiler
-rmic Servent
+rmic Servant
 
 # Start RMI registry
 rmiregistry &
