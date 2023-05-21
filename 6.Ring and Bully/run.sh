@@ -5,7 +5,7 @@ javac *.java
 
 if [ "$1" = "-1" ]; then
     # Run java Ring
-    java Bully
-else
     java Ring
+else
+    java Bully
 fi
