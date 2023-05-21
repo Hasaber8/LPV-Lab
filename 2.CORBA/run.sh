@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Compile IDL file
-# idlj -fall HelloModule.idl
+idlj -fall HelloModule.idl
 
 # Compile Java files
-# javac *.java HelloModule/*.java
+javac *.java HelloModule/*.java
 
 # Check if orbd is running and kill if necessary
 pkill orbd
